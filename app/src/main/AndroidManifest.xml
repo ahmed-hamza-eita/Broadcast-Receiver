@@ -36,9 +36,19 @@
                 android:value="" />
         </activity> <!-- STEP 2 -->
         <receiver
-            android:name=".broadcast.MyBroadcast"
-            android:exported="true" /> <!-- STEP 2 -->
-        <service android:name=".services.MyServices"></service>
+            android:name=".broadcast.MyBroadcast"></receiver>
+
+
+
+
+<!--            android:exported="true" /> &lt;!&ndash; STEP 2 &ndash;&gt;-->
+<!--        <service android:name=".services.MyServices">-->
+<!--            -->
+<!--            -->
+<!--        </service>-->
+        <service android:name=".services.MyIntentService">
+
+        </service>
     </application>
 
 </manifest>
