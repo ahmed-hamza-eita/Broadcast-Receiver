@@ -9,8 +9,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="/media/hamza/101/Android/Instant/session 22 broadCast/BoroadcastServises" />
-            <option value="/media/hamza/101/Android/Instant/session 22 broadCast/BoroadcastServises/app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
       </GradleProjectSettings>

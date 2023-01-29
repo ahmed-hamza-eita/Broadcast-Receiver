@@ -5,11 +5,14 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETEDo" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
+        android:name=".App"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -34,19 +37,17 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity> <!-- STEP 2 -->
+        </activity>
+        <!-- STEP 2 -->
         <receiver
             android:name=".broadcast.MyBroadcast"></receiver>
 
 
-
-
-<!--            android:exported="true" /> &lt;!&ndash; STEP 2 &ndash;&gt;-->
-<!--        <service android:name=".services.MyServices">-->
-<!--            -->
-<!--            -->
-<!--        </service>-->
         <service android:name=".services.MyIntentService">
+<!--            android:foregroundServiceType="camera"-->
+<!--            android:foregroundServiceType="location"-->
+            >
+
 
         </service>
     </application>
